@@ -1,0 +1,23 @@
+baseurl = "/"
+languageCode = "en-us"
+title = "danbiwer"
+theme = "hugo-classic"
+googleAnalytics = ""
+ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
+preserveTaxonomyNames = true
+enableEmoji = true
+footnotereturnlinkcontents = "↩"
+publishDir = "docs"
+
+[permalinks]
+    post = "/post/:year/:month/:day/:slug/"
+
+[[menu.main]]
+    name = "Projects"
+    url = "/projects/"
+    weight = 1
+
+[params]
+    description = "A simple, minimal blog for those who love text."
+    footer = "[Github](https://github.com/danbiwer/) | [LinkedIn](https://www.linkedin.com/in/dbiwer/)"
+    custom_css = ["css/theme-override.css"]
